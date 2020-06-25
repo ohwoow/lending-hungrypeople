@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hungry People</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#">Home</a>
+          </li>
+          <li><a class="nav__link flowing-scroll" href="#about">About</a>
+          </li>
+          <li><a class="nav__link flowing-scroll" href="#team">Team</a>
+          </li>
+          <li><a class="nav__link flowing-scroll" href="#booking">Booking</a>
+          </li>
+          <li class="nav__item-logo">
+            <a class="nav__link logo" href="#">
+              <picture>
+                <source srcset="img/logo.svg" type="image/webp">
+                  <img class="logo-img" src="img/logo.svg" alt="Logo" />
+              </picture>
+            </a>
+          </li>
+          <li><a class="nav__link flowing-scroll" href="#menu">Menu</a>
+          </li>
+          <li><a class="nav__link flowing-scroll" href="#gallery">Gallery</a>
+          </li>
+          <li><a class="nav__link flowing-scroll" href="#events">Events</a>
+          </li>
+          <li><a class="nav__link flowing-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button class="ham-menu" type="button"><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <section class="intro" id="home"><span class="hours">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</span>
+    <div class="section-header intro-header"><span class="suptitle"> RESTAURANT</span>
+      <h1 class="title intro__title">Hungry People</h1>
+      <div class="section-buttons"><a class="btn" href="#">Book Table</a><a class="btn" href="#">Explore</a>
+      </div>
+    </div>
+    <div class="social">
+      <a class="social__link" href="#">
+        <img class="social__icon" src="img/fb.svg" alt="Facebook" />
+      </a>
+      <a class="social__link" href="#">
+        <img class="social__icon" src="img/twitter.svg" alt="twitter" />
+      </a>
+      <a class="social__link" href="#">
+        <img class="social__icon" src="img/inst.svg" alt="instagram" />
+      </a>
+    </div>
+    <a class="go-down flowing-scroll animate__animated animate__pulse" href="#about"></a>
+  </section>
+  <section class="section about" id="about">
+    <div class="section__inner">
+      <div class="section-content about-content wow animate__animated animate__fadeInLeft" data-wow-offset="200">
+        <h2 class="title">about us</h2>
+        <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+        <p class="text about__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra.
+          Nulla facilisis semper laoreet.</p>
+      </div>
+      <div class="section-photo wow animate__animated animate__fadeInRight" data-wow-offset="200">
+        <img class="section__img" src="img/about-img.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+  <section class="section our-team" id="team">
+    <div class="section-name">our team</div>
+    <div class="section__inner">
+      <div class="section-photo section-photo--left wow animate__animated animate__fadeInUp" data-wow-offset="200">
+        <img class="section__img" src="img/team-photo.jpg" alt="" />
+      </div>
+      <div class="section-content our-team__content wow animate__animated animate__fadeInDown" data-wow-offset="200">
+        <h2 class="title">master chef</h2>
+        <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+        <p class="text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra.
+          Nulla facilisis semper laoreet.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section book-up" id="booking">
+    <div class="section__inner">
+      <div class="book-up__content wow animate__animated animate__fadeInDown" data-wow-offset="200">
+        <h2 class="title book-up__title">Book a table</h2>
+        <form class="book-up__form" action="#" method="post" id="bookUpForm">
+          <input class="book-up-form__input" type="text" placeholder="Name" name="firstname" id="name" />
+          <input class="book-up-form__input" type="email" placeholder="Email" name="email" required="required" id="email" />
+          <input class="book-up-form__input" type="tel" placeholder="Phone" name="tel" required="required" id="tel" />
+          <input class="book-up-form__input book-up-form__input-dropdown" type="number" placeholder="People" name="people" required="required" id="people" />
+          <input class="book-up-form__input" type="tel" placeholder="Date (mm/dd)" name="date" required="required" id="date" />
+          <input class="book-up-form__input" type="time" placeholder="Time" name="time" required="required" id="time" />
+          <button class="form__btn" type="submit">Book now</button>
+        </form>
+      </div>
+      <div class="section-photo wow animate__animated animate__fadeInUp" data-wow-offset="200">
+        <img class="section__img" src="img/clock-img.jpg" alt="" />
+      </div>
+      <div class="section__hours">Mon - Fri: <strong>8PM - 10PM</strong>, Sat - Sun: <strong>8PM - 3AM</strong>, Phone: <strong>+40 729 131 637/+40 726 458 782</strong>
+      </div>
+    </div>
+  </section>
+  <section class="section specialities">
+    <div class="section-name">specialities</div>
+    <div class="section__inner specialities-slider">
+      <div class="specialities-slide">
+        <div class="section-photo section-photo--left">
+          <img class="section__img" src="img/specialites-img.jpg" alt="" />
+        </div>
+        <div class="section-content specialities__content">
+          <h2 class="title">Chocolate pancakes</h2>
+          <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+          <p class="text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra.
+            Nulla facilisis semper laoreet.</p>
+        </div>
+      </div>
+      <div class="specialities-slide">
+        <div class="section-photo section-photo--left">
+          <img class="section__img" src="img/specialites-img.jpg" alt="" />
+        </div>
+        <div class="section-content specialities__content">
+          <h2 class="title">Chocolate pancakes</h2>
+          <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+          <p class="text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra.
+            Nulla facilisis semper laoreet.</p>
+        </div>
+      </div>
+      <div class="specialities-slide">
+        <div class="section-photo section-photo--left">
+          <img class="section__img" src="img/specialites-img.jpg" alt="" />
+        </div>
+        <div class="section-content specialities__content">
+          <h2 class="title">Chocolate pancakes</h2>
+          <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+          <p class="text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra.
+            Nulla facilisis semper laoreet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section menu" id="menu">
+    <div class="section-content menu-content">
+      <div class="title menu__title">Delicious menu</div>
+      <div class="text menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
+    </div>
+    <div class="menu-categories">
+      <ul class="categories__list wow animate__animated animate__fadeInDown" data-wow-offset="200">
+        <li class="categories__item"><a class="categories__item-link" href="#">soupe</a>
+        </li>
+        <li class="categories__item"><a class="categories__item-link" href="#">pizza</a>
+        </li>
+        <li class="categories__item"><a class="categories__item-link" href="#">pasta</a>
+        </li>
+        <li class="categories__item"><a class="categories__item-link" href="#">desert</a>
+        </li>
+        <li class="categories__item"><a class="categories__item-link" href="#">wine</a>
+        </li>
+        <li class="categories__item"><a class="categories__item-link" href="#">beer</a>
+        </li>
+        <li class="categories__item"><a class="categories__item-link" href="#">drinks</a>
+        </li>
+      </ul>
+    </div>
+    <div class="menu-goods">
+      <div class="menu-goods__inner">
+        <ul class="goods__list wow animate__animated animate__fadeInUp" data-wow-offset="200">
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul class="goods__list wow animate__animated animate__fadeInDown" data-wow-offset="200">
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <ul class="goods__list wow animate__animated animate__fadeInUp" data-wow-offset="200">
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+          <li class="goods__item">
+            <a href="#">
+              <div class="goods__item-info">
+                <div class="goods__item-name">pizza quatro stagoniiiii</div>
+                <div class="goods__item-price">55,68 usd</div>
+              </div>
+              <div class="goods__item-descr"><span class="good__item-text">Integer ullamcorper neque eu purus euismod</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="section events" id="events">
+    <div class="section-name">Private events</div>
+    <div class="section__inner">
+      <div class="events-item">
+        <div class="section-photo section-photo--left">
+          <img class="section__img" src="img/ring-img.jpg" alt="" />
+          <div class="events-item__name"><span class="events-item__text">weddings</span>
+          </div>
+        </div>
+      </div>
+      <div class="events-item">
+        <div class="section-photo">
+          <img class="section__img" src="img/corporative-img.jpg" alt="" />
+          <div class="events-item__name events-item__name--left"><span class="events-item__text events-item__text--bottom">corporate pzrties</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section__hours events__tel">For private events please call: <strong>+40 729 131 637 / +40 726 458 782</strong> or use the contact form.</div>
+  </div>
+  <div class="gallery" id="gallery">
+    <div class="gallery__inner">
+      <a class="gallery__img-link fancybox" href="img/photo-1.jpg" rel="gallery1" data-fancybox="gallery">
+        <img class="gallery__img" src="img/photo-1.jpg" alt="img 01" />
+      </a>
+      <a class="gallery__img-link fancybox" href="img/photo-2.jpg" rel="gallery1" data-fancybox="gallery">
+        <img class="gallery__img" src="img/photo-2.jpg" alt="img 02" />
+      </a>
+      <a class="gallery__img-link fancybox" href="img/photo-3.jpg" rel="gallery1" data-fancybox="gallery">
+        <img class="gallery__img" src="img/photo-3.jpg" alt="img 03" />
+      </a>
+      <a class="gallery__img-link fancybox" href="img/photo-4.jpg" rel="gallery1" data-fancybox="gallery">
+        <img class="gallery__img" src="img/photo-4.jpg" alt="" />
+      </a>
+      <a class="gallery__img-link fancybox" href="img/photo-5.jpg" rel="gallery1" data-fancybox="gallery">
+        <img class="gallery__img" src="img/photo-5.jpg" alt="" />
+      </a>
+    </div>
+  </div>
+  <section class="section contact" id="contact">
+    <div class="section-content contact-content">
+      <h2 class="title">contact</h2>
+      <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+    </div>
+    <div class="contact-form">
+      <form class="form" action="#" method="post" id="sendMessage">
+        <input class="form__input" type="text" placeholder="Name" name="name" required="required" />
+        <input class="form__input" type="email" placeholder="Email" name="email" required="required" />
+        <input class="form__input" type="phone" placeholder="Phone" name="tel" required="required" />
+        <textarea class="form__textarea" name="message" placeholder="Message" required="required"></textarea>
+        <div class="form__send">
+          <div class="info">
+            <div class="info__item">
+              <img class="info__icon" src="img/pin.svg" alt="" /><span class="info__text">5th London Boulevard, U.K.  </span>
+            </div>
+            <div class="info__item">
+              <img class="info__icon" src="img/phone.svg" alt="" /><span class="info__text">+40 729 131 637/+40 726 458 782</span>
+            </div>
+            <div class="info__item">
+              <img class="info__icon" src="img/mail.svg" alt="" /><span class="info__text">office@mindblister.com                </span>
+            </div>
+          </div>
+          <button class="form__send-btn" type="submit">Send message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22273.38449082624!2d12.80937658615727!3d45.74767636006838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477be6557786c907%3A0x40027817629127b5!2zMzAwMjMg0JrQvtC90LrQvtGA0LTQuNGPLdCh0LDQtNC20LjRgtGC0LDRgNC40Y8sINCS0LXQvdC10YbQuNGPLCDQmNGC0LDQu9C40Y8!5e0!3m2!1sru!2sru!4v1592662344329!5m2!1sru!2sru"
+    width="100%" height="475" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+  <footer class="footer"><span class="footer__text">© Copyright Mindblister  2019</span>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>
