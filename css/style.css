@@ -6030,9 +6030,8 @@ label.error {
   background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/header-bg.jpg");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/header-bg.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-size: cover;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6605,7 +6604,7 @@ label.error {
 }
 
 .form__input:nth-child(2) {
-  margin-right: 0;
+  margin-right: 10px;
 }
 
 .form__input[name="tel"] {
@@ -6800,6 +6799,13 @@ label.error {
 
   .title {
     font-size: 38px;
+  }
+
+  .intro,
+  .our-team,
+  .specialities,
+  .events {
+    background-attachment: initial;
   }
 
   .intro__title {
@@ -7004,6 +7010,12 @@ label.error {
   }
 }
 
+@media (max-width: 667px) {
+  #time {
+    width: 300px;
+  }
+}
+
 @media (max-width: 630px) {
   .intro__title {
     font-size: 66px;
@@ -7158,6 +7170,14 @@ label.error {
   .goods__item-price {
     font-size: 18px;
     margin-bottom: 10px;
+  }
+
+  #time {
+    width: 300px;
+  }
+
+  .info__text {
+    color: #000;
   }
 }
 
