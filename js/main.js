@@ -7,6 +7,12 @@ $(function () {
         dots: true
     })
 
+    $(window).scroll(function () {
+        const scroll = $(this).scrollTop()
+
+        $('.intro-header').css('transform', 'translateY('+ scroll / 3.5 +'px)')
+    })
+
     $('.ham-menu').on('click', function () {
         $(this).toggleClass('active')
         $('.nav__list').toggleClass('active')
